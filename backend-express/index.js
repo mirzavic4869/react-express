@@ -17,5 +17,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.listen(port, () => {
-  console.log(`Server can started on http://localhost:${port}`);
+  console.log(`Server started on http://localhost:${port}`);
 });
