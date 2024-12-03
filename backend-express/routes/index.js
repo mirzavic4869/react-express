@@ -28,8 +28,11 @@ router.post('/register', validateRegister, registerController.register);
 //define route for login
 router.post('/login', validateLogin, loginController.login);
 
-//define route for user
+//define route for user create
 router.get('/admin/users', verifyToken, userController.findUsers);
+
+//define route for user by id
+router.get('/admin/users/:id', verifyToken, userController.findUserById);
 
 //define route for user
 router.post('/admin/users', verifyToken, validateUser, userController.createUser);
