@@ -2,7 +2,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 
 //import hook react
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 
 // import Cookies from js-cookie
 import Cookies from 'js-cookie';
